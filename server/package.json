@@ -1,0 +1,25 @@
+{
+  "name": "wow-party-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "dev:mock": "tsx watch src/index.ts --mock",
+    "start": "tsx src/index.ts",
+    "start:mock": "tsx src/index.ts --mock",
+    "build": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "smoke": "tsx scripts/smoke.ts",
+    "live-check": "tsx scripts/live-check.ts"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "socket.io-client": "^4.8.1",
+    "tsx": "^4.19.2"
+  }
+}

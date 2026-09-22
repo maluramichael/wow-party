@@ -1,0 +1,20 @@
+{
+  "name": "wow-party",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live dashboard for a Playerbots party on an AzerothCore 3.3.5a server",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c blue,green \"npm run dev -w server\" \"npm run dev -w web\"",
+    "dev:mock": "concurrently -k -n server,web -c blue,green \"npm run dev:mock -w server\" \"npm run dev -w web\"",
+    "build": "npm run build -w server && npm run build -w web",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web",
+    "smoke": "npm run smoke -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "playwright-core": "^1.49.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": { "node": ">=22" }
+}
