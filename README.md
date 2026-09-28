@@ -1,5 +1,10 @@
 # wow-party
 
+<!-- links:start -->
+[![Support me on Ko-fi](https://malura.de/assets/badge/kofi.svg)](https://malura.de/go/kofi?ref=wow-party)
+[![Check out my page](https://malura.de/assets/badge/malura.svg)](https://malura.de/go/site?ref=wow-party)
+<!-- links:end -->
+
 Live-Dashboard für die Playerbots-Party auf dem WoW-3.3.5a-Server (AzerothCore + mod-playerbots).
 Zeigt alles **im Vergleich zu deinem aktiven Charakter** ("Du"), damit man beim Spielen Abweichungen
 (Quests, Ausrüstung, Level, Zone) sofort sieht, und erlaubt Befehle an die Bots.
